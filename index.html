@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/style.css" />
+  <script src="JS/main.js" defer></script>
+  <script src="https://kit.fontawesome.com/166f1bae6e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="app">
+    <div class="nav">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" class="search-bar" placeholder="Search for location" />
+      <div>
+        <button class="btn"><i class="fa-regular fa-user"></i></button>
+        <button class="btn"><i class="fa-regular fa-bell"></i></button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="box1">
+        <div class="itm item1">
+          <div class="item1-header">
+            <h3>Current Weather:</h3>
+            <p id="city">Stockholm</p>
+          </div>
+          <div class="item1-weather">
+            <img class="current-weather" src="Images/clear.png">
+            <h1 id="temp">23°C</h1>
+          </div>
+          <div class="item1-info">
+            <section>
+              <img src="Images/wind.png">
+              <p id="wind">20</p>
+            </section>
+            <section>
+              <img src="Images/humidity.png">
+              <p id="hum">20</p>
+            </section>
+            <section>
+              <i class="fa-solid fa-arrow-down-wide-short"></i>
+              <p id="press">20</p>
+            </section>
+            <section>
+              <i class="fa-solid fa-temperature-half"></i>
+              <p id="feel">20</p>
+            </section>
+          </div>
+        </div>
+        <div class="itm item2">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130266.11163178827!2d17.982052499999998!3d59.32614195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f763119640bcb%3A0xa80d27d3679d7766!2sStockholm!5e0!3m2!1sen!2sse!4v1703256413873!5m2!1sen!2sse"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="itm item3">
+          <section class="city-heading">
+            <h2>Popular Cities</h2>
+            <p>View More</p>
+          </section>
+          <section>
+            <img src="Images/clouds.png">
+            <h4>New York</h4>
+            <p>Partly Cloudy</p>
+          </section>
+          <section>
+            <img src="Images/clear.png">
+            <h4 class="two">London</h4>
+            <p>Drizzle Rain</p>
+          </section>
+          <section>
+            <img src="Images/clear.png">
+            <h4 class="three">Amsterdam</h4>
+            <p>Cloudy</p>
+          </section>
+          <section>
+            <img src="Images/rain.png">
+            <h4 class="four">Madrid</h4>
+            <p>Sunny</p>
+          </section>
+        </div>
+      </div>
+      
+      <div class="box2">
+        <div class="itm item4">
+          <section class="city-heading">
+            <h2>Forecast</h2>
+            <p>5 days</p>
+          </section>
+          <section>
+            <div class="forecast-pos">
+              <img class="forecast-img" src="Images/rain.png">
+              <h4 class="one">22°C</h4>
+            </div>
+            <p>07 Jan, Sun</p>
+          </section>
+          <section>
+            <div class="forecast-pos">
+              <img class="forecast-img" src="Images/clouds.png">
+              <h4 class="two">18°C</h4>
+            </div>
+            <p>08 Jan, Mon</p>
+          </section>
+          <section>
+            <div class="forecast-pos">
+              <img class="forecast-img" src="Images/clear.png">
+              <h4 class="three">21°C</h4>
+            </div>
+            <p>09 Jan, Tue</p>
+          </section>
+          <section>
+            <div class="forecast-pos">
+              <img class="forecast-img" src="Images/clouds.png">
+              <h4 class="four">15°C</h4>
+            </div>
+            <p>10 Jan,Wed</p>
+          </section>
+          <section>
+            <div class="forecast-pos">
+              <img src="Images/clear.png">
+              <h4 class="five">20°C</h4>
+            </div>
+            <p>11 Jan, Thu</p>
+          </section>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="itm item5">
+          <nav class="item5-nav">
+            <h3>Summary</h3>
+            <div>
+              <p>Summary</p>
+              <p>3 hours</p>
+              <p>More Details</p>
+            </div>
+          </nav>
+          <div class="dash-line"></div>
+          <section class="hour-cast">
+            <div class="row">
+              <div class="rain">Rain</div>
+              <div class="value">10</div>
+              <div class="value">10</div>
+              <div class="value">10</div>
+              <div class="value">10</div>
+              <div class="value">10</div>
+            </div>
+            <div class="row">
+              <div class="time">Now</div>
+              <div class="time">8pm</div>
+              <div class="time">11pm</div>
+              <div class="time">2am</div>
+              <div class="time">5am</div>
+              <div class="time">8am</div>
+            </div>
+          </section>
+        </div>
+        <!-- Item 5 -->
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
